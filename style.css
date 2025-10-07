@@ -11,7 +11,10 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--preto-forte);
+  background-image: url(imagens/pinheiro.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   font-family: var(--fonte-principal);
   color: var(--branco);
 }
@@ -90,4 +93,98 @@ section h2 {
 .contatos a {
   color: var(--branco);
   text-decoration: underline;
+}
+
+.contato-form {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: var(--verde-pinheiro);
+  padding: 30px;
+  border-radius: 10px;
+  color: var(--branco);
+}
+
+.contato-form input,
+.contato-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contato-form button {
+  background-color: var(--preto-forte);
+  color: var(--verde-pinheiro);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.projeto-card:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  transition: box-shadow 0.3s ease;
+}
+
+/*Blog*/
+.blog {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: var(--branco);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  color: var(--preto-forte);
+}
+
+.post {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--verde-pinheiro);
+  color: var(--branco);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.post h2 {
+  margin-top: 0;
+}
+
+.post a {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--preto-forte);
+  background-color: var(--branco);
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.post a:hover {
+  background-color: var(--preto-forte);
+  color: var(--verde-pinheiro);
+}
+
+.botao-blog {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: var(--verde-pinheiro);
+  color: var(--branco);
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.botao-blog:hover {
+  background-color: var(--preto-forte);
+  color: var(--verde-pinheiro);
 }
