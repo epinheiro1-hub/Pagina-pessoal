@@ -5,10 +5,12 @@
   --branco: #ffffff;
   --cinza-suave: #cccccc;
   --fonte-principal: 'Segoe UI', sans-serif;
+  
 }
 
 /* Reset básico */
 body {
+  font-family: 'Segoe UI';
   margin: 0;
   padding: 0;
   background-image: url(imagens/pinheiro.jpg);
@@ -17,6 +19,7 @@ body {
   background-position: center;
   font-family: var(--fonte-principal);
   color: var(--branco);
+  line-height: 1,6;
 }
 
 /* Cabeçalho */
@@ -29,6 +32,8 @@ header {
   font-weight: bold;
   letter-spacing: 2px;
 }
+
+
 
 /* Seções */
 section {
@@ -188,3 +193,52 @@ button:hover {
   background-color: var(--preto-forte);
   color: var(--verde-pinheiro);
 }
+/* Projetos */
+.projetos {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: var(--branco); /* fundo branco */
+  color: black; /* texto preto */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Tabela de Projetos */
+.tabela-projetos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* corrigido "Spx" para "5px" */
+}
+
+/* Células da tabela */
+.tabela-projetos th,
+.tabela-projetos td {
+  border: 1px solid var(--verde-pinheiro);
+  padding: 15px;
+  text-align: left;
+  color: black;
+}
+
+/* Cabeçalho da tabela */
+.tabela-projetos th {
+  background-color: var(--verde-pinheiro); /* fundo verde */
+  color: var(--preto-forte); /* texto escuro */
+  font-weight: bold;
+}
+
+/* Linhas alternadas */
+.tabela-projetos tr:nth-child(even) {
+  background-color: #f9f9f9; /* tom suave para alternância */
+}
+
+/* Hover nas linhas */
+.tabela-projetos tr:hover {
+  background-color: #eaeaea;
+  transition: background-color 0.3s ease;
+}
+
+

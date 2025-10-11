@@ -12,16 +12,18 @@
 
   <!-- Cabeçalho principal com logo e perfil -->
   <header class="cabecalho">
-    <div class="logo">
-      <img src="imagens/Epinheiro.jpg.png" width="100px">
-    </div>
     <div class="perfil">
-      <img src="imagens/Perfil.jpeg" alt="Foto de Eduardo Pinheiro"  width: 80px;>
-      <div class="info">
-        <h2>Eduardo Pinheiro</h2>
+        <img src="imagens/Perfil.jpeg" alt="Foto de Eduardo Pinheiro"  width: 80px;>
+      
+        <h1>Eduardo Pinheiro</h1>
         <p>Estudante de Engenharia de Software</p>
-      </div>
+      <nav class="Menu-navegação">
+        <a href="index.html">Início</a>
+        <a href="blog.html"> Blog</a>
+        <a href="aprendizago.html">Faculdade</a>
+      </nav>
     </div>
+
   </header>
 
 <a href="blog.html" class="botao-blog">Acessar Blog</a>
@@ -35,13 +37,29 @@
   <!-- Card de projetos -->
   <section class="projetos">
     <h2>Meus Projetos</h2>
-    <div class="projeto-card">
-      <h3>Gestor de Tarefas</h3>
-      <p>Aplicação web para organizar tarefas diárias com React e Firebase.</p>
-      <a href="https://github.com/seuperfil/projeto-tarefas" target="_blank">Ver no GitHub</a>
+     <table class="tabela-projetos">
+        <thead>
+            <tr>
+              <th>PROJETO</th>
+              <th>TECNOLOGIA</th>
+              <th>DESCRIÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://epinheiro1-hub.github.io/Pagina-pessoal/">Página Pessoal</a></td>
+                <td>HMTL,CSS</td>
+                <td>Apresentação da minha jornada profissionalizante e demonstração prática das minhas hard skills</td>
+            </tr>
+              <td><a href="https://epinheiro1-hub.github.io/Pagina-pessoal/blog.html">Blog de aprendizados</a></td>
+              <td>HTML, CSS, JS</td>
+              <td>Espaço para colocar meus aprendizados, reflexões, estudos e projetos em andamento</td>
+        </tbody>
+     </table>
     </div>
-    <!-- Card de contatos -->
   </section>
+    <!-- Card de contatos -->
+  
  <section class="contatos">
   <h2>Meus contatos</h2>
   <p><i class="fas fa-envelope"></i> eduardoapds99@gmail.com</p>
